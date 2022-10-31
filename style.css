@@ -34,7 +34,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 65px;
   text-decoration: none;
   color: white;
@@ -67,7 +67,6 @@ main nav img:hover {
 .main-content {
   width: 100%;
   height: 100%;
-  overflow: auto;
 }
 .jumbotron {
   height: 100%;
@@ -165,4 +164,21 @@ main nav img:hover {
 }
 .soon:nth-child(2n) {
   background-color: royalblue;
+}
+hr {
+  width: 25%;
+  opacity: 1;
+  border-top: 5px solid #666;
+}
+section {
+  padding-top: 5rem;
+}
+
+#pengabdian,
+#companyfair {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/background_ieeebig.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
