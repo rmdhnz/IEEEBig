@@ -5,7 +5,7 @@ humbergerMenu.addEventListener("click", (e) => {
     sideBar.classList.toggle("geser");
   }
 });
-const menuSidebar = document.querySelectorAll(".sidebar ul li a");
+const menuSidebar = document.querySelectorAll(".sidebar ul .soon");
 menuSidebar.forEach((e) => {
   e.addEventListener("click", (isi) => {
     isi.preventDefault();
