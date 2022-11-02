@@ -5,17 +5,10 @@ humbergerMenu.addEventListener("click", (e) => {
     sideBar.classList.toggle("geser");
   }
 });
-const menuSidebar = document.querySelectorAll(".sidebar ul .soon");
+const menuSidebar = document.querySelectorAll(".soon");
 menuSidebar.forEach((e) => {
   e.addEventListener("click", (isi) => {
     isi.preventDefault();
     alert("Coming soon");
-  });
-});
-const cardMenu = document.querySelectorAll(".card a");
-cardMenu.forEach((e) => {
-  e.addEventListener("click", (isi) => {
-    isi.preventDefault();
-    alert("coming soon");
   });
 });
