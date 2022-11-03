@@ -224,6 +224,7 @@
                       placeholder="example@gmail.com"
                       id="email"
                       name="email"
+                      required
                     />
                   </div>
                   <div class="mb-3">
@@ -234,11 +235,12 @@
                       placeholder="Input your name"
                       id="name"
                       name="nama"
+                      required
                     />
                   </div>
                   <div class="mb-3">
                     <label for="univ" class="form-label text-light"
-                      >University/Institution</label
+                      >University/Institution/School</label
                     >
                     <input
                       type="text"
@@ -268,29 +270,51 @@
                     <label for="contact" class="form-label text-light"
                       >whatsapp/line</label
                     >
-                    <input type="text" class="form-control" name="contact" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="contact"
+                      required
+                    />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb3 member-form">
+                    <label for="member" class="form-label text-light"
+                      >Are you a member of IEEE ITS SB ?</label
+                    >
+                    <input
+                      type="checkbox"
+                      name="member"
+                      class="form-check-label"
+                    />
+                  </div>
+                  <div class="mb-3 bukti">
+                    <label for="bukti" class="form-label text-light"
+                      >Receipt. Drop your receipt at
+                      <a
+                        href="https://drive.google.com/drive/folders/1wxODDmTicyu6QtjzLz8x5ZoozvrVViP-?usp=share_link"
+                        class="btn btn-primary"
+                        target="_blank"
+                        required
+                        >Here</a
+                      ></label
+                    >
+                    <input
+                      type="url"
+                      class="form-control"
+                      name="bukti"
+                      placeholder="Drop the link of your receipt"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 d-none kode">
                     <label for="kode" class="form-label text-light"
                       >Member Code</label
                     >
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="fill '-' if you're not a member of IEEE ITS SB"
                       name="kode"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="bukti" class="form-label text-light"
-                      >Bukti Transfer (Skip if you are a member of IEEE ITS
-                      SB)</label
-                    ><br />
-                    <input
-                      type="file"
-                      class="form-control"
-                      name="bukti"
-                      id="bukti"
+                      placeholder="Input your member code"
                     />
                   </div>
                   <div class="mb-3">
@@ -322,6 +346,20 @@
                     Loading...
                   </button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="finish d-none">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Thank You for registering</h5>
+                    <a href="" class="btn btn-outline-primary">Back</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
