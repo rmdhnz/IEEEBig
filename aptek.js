@@ -15,6 +15,7 @@ form.addEventListener("submit", (e) => {
       btnLoading.classList.toggle("d-none");
       myAlert.classList.toggle("d-none");
       form.reset();
+      console.log(form.nama.value);
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
